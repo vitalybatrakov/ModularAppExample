@@ -95,8 +95,32 @@
 		BC00AA8A2BCF72A900DE8AD2 /* FeatureSupport */ = {
 			isa = PBXGroup;
 			children = (
+				BCE2316E2BD22F4700D5D8BD /* RestaurantDetails */,
+				BCE2316D2BD22F4000D5D8BD /* Profile */,
+				BCE2316C2BD22F3B00D5D8BD /* Home */,
 			);
 			path = FeatureSupport;
+			sourceTree = "<group>";
+		};
+		BCE2316C2BD22F3B00D5D8BD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCE2316D2BD22F4000D5D8BD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BCE2316E2BD22F4700D5D8BD /* RestaurantDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RestaurantDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
