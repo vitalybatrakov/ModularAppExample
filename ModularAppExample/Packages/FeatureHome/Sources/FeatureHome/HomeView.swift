@@ -1,13 +1,21 @@
 import SwiftUI
 
+struct Restaurant: Identifiable {
+    let id: String = UUID().uuidString
+
+}
+
 struct HomeView: View {
+    let restaurants = [
+        Restaurant(), Restaurant(), Restaurant()
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
-                .frame(width: 100, height: 100)
-            Text("John Smith")
-                .bold()
-            Text("iOS Developer")
+        ForEach(restaurants) { restaurant in
+            RestaurantView()
+                .onTapGesture {
+                    // open by restaurant.id
+                }
         }
     }
 }

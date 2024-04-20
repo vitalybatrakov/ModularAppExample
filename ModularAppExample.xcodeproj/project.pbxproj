@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		BC00AA7B2BCF6DD600DE8AD2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BC00AA7A2BCF6DD600DE8AD2 /* Base */; };
 		BC00AA7D2BCF6DD700DE8AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC00AA7C2BCF6DD700DE8AD2 /* Assets.xcassets */; };
 		BC00AA802BCF6DD700DE8AD2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BC00AA7F2BCF6DD700DE8AD2 /* Base */; };
+		BC85B7542BD37BA100AD6F06 /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B7532BD37BA100AD6F06 /* FeatureHome */; };
+		BC85B7572BD37BDF00AD6F06 /* FeatureProfile in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B7562BD37BDF00AD6F06 /* FeatureProfile */; };
+		BC85B75A2BD37BE700AD6F06 /* FeatureRestaurantDetails in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B7592BD37BE700AD6F06 /* FeatureRestaurantDetails */; };
+		BC85B75D2BD37BF000AD6F06 /* YourNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B75C2BD37BF000AD6F06 /* YourNetwork */; };
+		BC85B7602BD37BF700AD6F06 /* YourUI in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B75F2BD37BF700AD6F06 /* YourUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC85B7602BD37BF700AD6F06 /* YourUI in Frameworks */,
+				BC85B75D2BD37BF000AD6F06 /* YourNetwork in Frameworks */,
+				BC85B7542BD37BA100AD6F06 /* FeatureHome in Frameworks */,
+				BC85B7572BD37BDF00AD6F06 /* FeatureProfile in Frameworks */,
+				BC85B75A2BD37BE700AD6F06 /* FeatureRestaurantDetails in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +160,11 @@
 			);
 			name = ModularAppExample;
 			packageProductDependencies = (
+				BC85B7532BD37BA100AD6F06 /* FeatureHome */,
+				BC85B7562BD37BDF00AD6F06 /* FeatureProfile */,
+				BC85B7592BD37BE700AD6F06 /* FeatureRestaurantDetails */,
+				BC85B75C2BD37BF000AD6F06 /* YourNetwork */,
+				BC85B75F2BD37BF700AD6F06 /* YourUI */,
 			);
 			productName = ModularAppExample;
 			productReference = BC00AA702BCF6DD600DE8AD2 /* ModularAppExample.app */;
@@ -180,6 +195,11 @@
 			);
 			mainGroup = BC00AA672BCF6DD600DE8AD2;
 			packageReferences = (
+				BC85B7522BD37BA100AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureHome" */,
+				BC85B7552BD37BDF00AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureProfile" */,
+				BC85B7582BD37BE700AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureRestaurantDetails" */,
+				BC85B75B2BD37BF000AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/YourNetwork" */,
+				BC85B75E2BD37BF700AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/YourUI" */,
 			);
 			productRefGroup = BC00AA712BCF6DD600DE8AD2 /* Products */;
 			projectDirPath = "";
@@ -433,6 +453,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BC85B7522BD37BA100AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureHome" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModularAppExample/Packages/FeatureHome;
+		};
+		BC85B7552BD37BDF00AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureProfile" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModularAppExample/Packages/FeatureProfile;
+		};
+		BC85B7582BD37BE700AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/FeatureRestaurantDetails" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModularAppExample/Packages/FeatureRestaurantDetails;
+		};
+		BC85B75B2BD37BF000AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/YourNetwork" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModularAppExample/Packages/YourNetwork;
+		};
+		BC85B75E2BD37BF700AD6F06 /* XCLocalSwiftPackageReference "ModularAppExample/Packages/YourUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ModularAppExample/Packages/YourUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC85B7532BD37BA100AD6F06 /* FeatureHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureHome;
+		};
+		BC85B7562BD37BDF00AD6F06 /* FeatureProfile */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureProfile;
+		};
+		BC85B7592BD37BE700AD6F06 /* FeatureRestaurantDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureRestaurantDetails;
+		};
+		BC85B75C2BD37BF000AD6F06 /* YourNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YourNetwork;
+		};
+		BC85B75F2BD37BF700AD6F06 /* YourUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YourUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC00AA682BCF6DD600DE8AD2 /* Project object */;
 }
