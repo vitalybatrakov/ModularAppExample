@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ProfileView: View {
+struct RestaurantDetailsView: View {
     var body: some View {
         VStack {
             Image(systemName: "person.fill")
@@ -13,5 +13,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    RestaurantDetailsView()
 }

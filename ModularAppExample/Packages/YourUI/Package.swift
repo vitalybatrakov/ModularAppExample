@@ -4,15 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "FeatureHome",
+    name: "YourUI",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "FeatureHome",
-            targets: ["FeatureHome"]
+            name: "YourUI",
+            targets: ["YourUI"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.7.1"))
+    ],
     targets: [
-        .target(name: "FeatureHome")
+        .target(
+            name: "YourUI",
+            dependencies: [
+                .product(name: "SnapKit", package: "SnapKit")
+            ]
+        )
     ]
 )

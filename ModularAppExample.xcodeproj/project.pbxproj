@@ -24,6 +24,11 @@
 		BC00AA7C2BCF6DD700DE8AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC00AA7F2BCF6DD700DE8AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC00AA812BCF6DD700DE8AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE2316F2BD3726D00D5D8BD /* FeatureHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureHome; sourceTree = "<group>"; };
+		BCE231702BD3726D00D5D8BD /* YourUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourUI; sourceTree = "<group>"; };
+		BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureRestaurantDetails; sourceTree = "<group>"; };
+		BCE231722BD3726D00D5D8BD /* YourNetwork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourNetwork; sourceTree = "<group>"; };
+		BCE231732BD3726D00D5D8BD /* FeatureProfile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureProfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,11 @@
 		BC00AA882BCF725C00DE8AD2 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				BCE2316F2BD3726D00D5D8BD /* FeatureHome */,
+				BCE231732BD3726D00D5D8BD /* FeatureProfile */,
+				BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */,
+				BCE231722BD3726D00D5D8BD /* YourNetwork */,
+				BCE231702BD3726D00D5D8BD /* YourUI */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -139,6 +149,8 @@
 			dependencies = (
 			);
 			name = ModularAppExample;
+			packageProductDependencies = (
+			);
 			productName = ModularAppExample;
 			productReference = BC00AA702BCF6DD600DE8AD2 /* ModularAppExample.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +179,8 @@
 				Base,
 			);
 			mainGroup = BC00AA672BCF6DD600DE8AD2;
+			packageReferences = (
+			);
 			productRefGroup = BC00AA712BCF6DD600DE8AD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
