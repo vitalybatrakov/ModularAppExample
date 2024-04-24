@@ -1,7 +1,9 @@
 import SwiftUI
 
-struct PinkStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
+public struct PinkStyle: ButtonStyle {
+    public func makeBody(
+        configuration: Configuration
+    ) -> some View {
         configuration.label
             .padding()
             .background(.pink)
@@ -15,9 +17,21 @@ struct PinkStyle: ButtonStyle {
     }
 }
 
+extension ButtonStyle where Self == PinkStyle {
+    public static var pink: PinkStyle { PinkStyle() }
+}
+
 #Preview {
-    Button("Press Me") {
-        print("Pink button pressed!")
+    VStack {
+        Button("Press Me") {
+            print("Pink button pressed!")
+        }
+        .buttonStyle(PinkStyle())
+        
+        Button("Press Me More") {
+            print("Pink button pressed again!")
+        }
+        .buttonStyle(.pink)
+        
     }
-    .buttonStyle(PinkStyle())
 }
