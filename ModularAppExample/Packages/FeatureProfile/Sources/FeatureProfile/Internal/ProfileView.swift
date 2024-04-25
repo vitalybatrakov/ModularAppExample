@@ -1,18 +1,27 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @State var user: User
+    
     var body: some View {
         VStack(spacing: 8) {
-            Image(systemName: "person.fill")
+            Image(systemName: user.image)
                 .resizable()
                 .frame(width: 100, height: 100)
-            Text("John Smith")
+            Text(user.name)
                 .bold()
-            Text("iOS Developer")
+            Text(user.bio)
         }
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(
+        user: .init(
+            image: "person.fill",
+            name: "John Smith",
+            bio: "Coffee & Pizza Lover"
+        )
+    )
 }

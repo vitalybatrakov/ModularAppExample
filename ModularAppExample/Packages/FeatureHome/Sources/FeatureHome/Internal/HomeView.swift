@@ -1,16 +1,7 @@
 import SwiftUI
 
-struct Restaurant: Identifiable {
-    let id: String = UUID().uuidString
-}
-
 struct HomeView: View {
-    let restaurants = [
-        Restaurant(), Restaurant(), Restaurant(),
-        Restaurant(), Restaurant(), Restaurant(),
-        Restaurant(), Restaurant(), Restaurant(),
-        Restaurant(), Restaurant(), Restaurant()
-    ]
+    @State private var vm = HomeViewModel()
     
     var body: some View {
         ScrollView {
@@ -19,10 +10,10 @@ struct HomeView: View {
                 pinnedViews: .sectionHeaders
             ) {
                 Section {
-                    ForEach(restaurants) { restaurant in
-                        HomeItemView()
+                    ForEach(vm.items) { item in
+                        HomeItemView(item: item)
                             .onTapGesture {
-                                // open by restaurant.id
+                                // open by id
                             }
                     }
                 } header: {

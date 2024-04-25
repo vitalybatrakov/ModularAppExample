@@ -1,18 +1,21 @@
 import SwiftUI
 
 struct HomeItemView: View {
+    @State var item: HomeItemModel
+    
     var body: some View {
         HStack {
             Image(
-                systemName: "takeoutbag.and.cup.and.straw.fill"
+                systemName: item.image
             )
             .resizable()
+            .scaledToFit()
             .frame(width: 50, height: 50)
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Startducks")
+                Text(item.title)
                     .bold()
-                Text("Best coffee you can imagine")
+                Text(item.description)
             }
             .padding(.horizontal)
             
@@ -23,5 +26,11 @@ struct HomeItemView: View {
 }
 
 #Preview {
-    HomeItemView()
+    HomeItemView(
+        item: .init(
+            image: "mug",
+            title: "Starducks",
+            description: "Krya-krya"
+        )
+    )
 }
