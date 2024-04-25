@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RestaurantView: View {
+struct HomeItemView: View {
     var body: some View {
         HStack {
             Image(
@@ -23,5 +23,5 @@ struct RestaurantView: View {
 }
 
 #Preview {
-    RestaurantView()
+    HomeItemView()
 }
