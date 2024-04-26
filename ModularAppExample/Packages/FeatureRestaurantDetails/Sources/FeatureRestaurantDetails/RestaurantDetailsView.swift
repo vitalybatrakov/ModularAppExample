@@ -1,21 +1,24 @@
 import SwiftUI
 
 struct RestaurantDetailsView: View {
+    @State var details: RestaurantDetails
+    
     var body: some View {
         ScrollView() {
             VStack(alignment: .leading) {
-                Image(systemName: "cup.and.saucer")
+                Image(systemName: details.image)
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity)
                     .frame(height: 200)
-                Text("Startducks")
+                Text(details.title)
                     .bold()
-                Text("Best coffee you can imagine")
+                Text(details.description)
                 
-                ForEach(0..<10) { _ in
-                    MenuItemView()
-                        .padding(.vertical)
+                List {
+                    ForEach(details.items) { item in
+                        MenuItemView(menuItem: item)
+                    }
                 }
             }
         }
@@ -25,5 +28,16 @@ struct RestaurantDetailsView: View {
 }
 
 #Preview {
-    RestaurantDetailsView()
+    RestaurantDetailsView(
+        details: .init(
+            image: "cup.and.saucer",
+            title: "Struducks",
+            description: "Best of the best",
+            items: [
+                MenuItem(title: "Large item", description: "Very large"),
+                MenuItem(title: "Medium item", description: "Very medium"),
+                MenuItem(title: "Small item", description: "Very small")
+            ]
+        )
+    )
 }

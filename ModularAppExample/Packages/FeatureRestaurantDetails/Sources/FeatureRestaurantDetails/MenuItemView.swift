@@ -1,15 +1,22 @@
 import SwiftUI
 
 struct MenuItemView: View {
+    @State var menuItem: MenuItem
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Menu Item")
+            Text(menuItem.title)
                 .bold()
-            Text("Menu item description")
+            Text(menuItem.description)
         }
     }
 }
 
 #Preview {
-    MenuItemView()
+    MenuItemView(
+        menuItem: .init(
+            title: "Title",
+            description: "Description"
+        )
+    )
 }
