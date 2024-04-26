@@ -15,11 +15,10 @@ struct RestaurantDetailsView: View {
                     .bold()
                 Text(details.description)
                 
-                List {
-                    ForEach(details.items) { item in
-                        MenuItemView(menuItem: item)
-                    }
+                ForEach(details.items) { item in
+                    MenuItemView(menuItem: item)
                 }
+                .padding(.vertical, 8)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -32,7 +31,7 @@ struct RestaurantDetailsView: View {
         details: .init(
             image: "cup.and.saucer",
             title: "Struducks",
-            description: "Best of the best",
+            description: "Best of the best of the best of the best of the best of the best of the best of the best of the best of the best of the best",
             items: [
                 MenuItem(title: "Large item", description: "Very large"),
                 MenuItem(title: "Medium item", description: "Very medium"),
