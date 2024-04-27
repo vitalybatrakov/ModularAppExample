@@ -18,6 +18,8 @@
 		BC85B75A2BD37BE700AD6F06 /* FeatureRestaurantDetails in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B7592BD37BE700AD6F06 /* FeatureRestaurantDetails */; };
 		BC85B75D2BD37BF000AD6F06 /* YourNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B75C2BD37BF000AD6F06 /* YourNetwork */; };
 		BC85B7602BD37BF700AD6F06 /* YourUI in Frameworks */ = {isa = PBXBuildFile; productRef = BC85B75F2BD37BF700AD6F06 /* YourUI */; };
+		BC85B7622BDCA63F00AD6F06 /* HomeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7612BDCA63F00AD6F06 /* HomeAPIService.swift */; };
+		BC85B7642BDCA65400AD6F06 /* HomeFeatureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		BC00AA7C2BCF6DD700DE8AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC00AA7F2BCF6DD700DE8AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC00AA812BCF6DD700DE8AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC85B7612BDCA63F00AD6F06 /* HomeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIService.swift; sourceTree = "<group>"; };
+		BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeatureRouter.swift; sourceTree = "<group>"; };
 		BCE2316F2BD3726D00D5D8BD /* FeatureHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureHome; sourceTree = "<group>"; };
 		BCE231702BD3726D00D5D8BD /* YourUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourUI; sourceTree = "<group>"; };
 		BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureRestaurantDetails; sourceTree = "<group>"; };
@@ -115,9 +119,9 @@
 		BC00AA8A2BCF72A900DE8AD2 /* FeatureSupport */ = {
 			isa = PBXGroup;
 			children = (
-				BCE2316E2BD22F4700D5D8BD /* RestaurantDetails */,
-				BCE2316D2BD22F4000D5D8BD /* Profile */,
 				BCE2316C2BD22F3B00D5D8BD /* Home */,
+				BCE2316D2BD22F4000D5D8BD /* Profile */,
+				BCE2316E2BD22F4700D5D8BD /* RestaurantDetails */,
 			);
 			path = FeatureSupport;
 			sourceTree = "<group>";
@@ -125,6 +129,8 @@
 		BCE2316C2BD22F3B00D5D8BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BC85B7612BDCA63F00AD6F06 /* HomeAPIService.swift */,
+				BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -230,7 +236,9 @@
 			files = (
 				BC00AA782BCF6DD600DE8AD2 /* TabBarControllerFactory.swift in Sources */,
 				BC00AA742BCF6DD600DE8AD2 /* AppDelegate.swift in Sources */,
+				BC85B7622BDCA63F00AD6F06 /* HomeAPIService.swift in Sources */,
 				BC00AA762BCF6DD600DE8AD2 /* SceneDelegate.swift in Sources */,
+				BC85B7642BDCA65400AD6F06 /* HomeFeatureRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
