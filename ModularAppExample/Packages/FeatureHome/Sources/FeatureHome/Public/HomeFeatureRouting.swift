@@ -1,6 +1,6 @@
 import Foundation
 
 public protocol HomeFeatureRouting {
-    func showRestaurantDetails()
+    func showRestaurantDetails(for item: HomeItem)
 }
 

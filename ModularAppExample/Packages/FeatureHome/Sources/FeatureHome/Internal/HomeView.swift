@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var vm = HomeViewModel()
+    @StateObject var vm: HomeViewModel
     
     var body: some View {
         ScrollView {
@@ -13,7 +13,7 @@ struct HomeView: View {
                     ForEach(vm.items) { item in
                         HomeItemView(item: item)
                             .onTapGesture {
-                                // open by id
+                                vm.showRestaurantDetails(for: item)
                             }
                     }
                 } header: {
@@ -28,6 +28,10 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView(
+//        vm: HomeViewModel(
+//            featureRouter: any HomeFeatureRouting
+//        )
+//    )
+//}
