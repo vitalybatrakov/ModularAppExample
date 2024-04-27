@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeItemView: View {
-    @State var item: HomeItemModel
+    @State var item: HomeItem
     
     var body: some View {
         HStack {

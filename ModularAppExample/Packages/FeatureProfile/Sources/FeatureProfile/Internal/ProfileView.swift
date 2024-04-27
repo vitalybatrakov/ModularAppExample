@@ -2,23 +2,23 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var user: User
+    @State var profile: Profile
     
     var body: some View {
         VStack(spacing: 8) {
-            Image(systemName: user.image)
+            Image(systemName: profile.image)
                 .resizable()
                 .frame(width: 100, height: 100)
-            Text(user.name)
+            Text(profile.name)
                 .bold()
-            Text(user.bio)
+            Text(profile.bio)
         }
     }
 }
 
 #Preview {
     ProfileView(
-        user: .init(
+        profile: .init(
             image: "person.fill",
             name: "John Smith",
             bio: "Coffee & Pizza Lover"

@@ -4,7 +4,7 @@ public enum ProfileFactory {
     public static func make() -> UIViewController {
         UIHostingController(
             rootView: ProfileView(
-                user: .init(
+                profile: .init(
                     image: "person.fill",
                     name: "John Smith",
                     bio: "Coffee & Pizza Lover"

@@ -4,7 +4,7 @@ extension HomeView {
     
     final class HomeViewModel: ObservableObject {
         
-        @Published var items: [HomeItemModel] = [
+        @Published var items: [HomeItem] = [
             .init(
                 image: "cup.and.saucer",
                 title: "Sizzle & Spice",
