@@ -1,11 +1,12 @@
 import FeatureHome
+import UIKit
 import FeatureRestaurantDetails
 
-struct HomeFeatureRouter: HomeFeatureRouting {
+class HomeFeatureRouter: HomeFeatureRouting {
+    var source: UIViewController?
     
     func showRestaurantDetails(for item: HomeItem) {
         let vc = RestaurantDetailsFactory.make()
-        // show vc
-        // get nc
+        source?.present(vc, animated: true)
     }
 }

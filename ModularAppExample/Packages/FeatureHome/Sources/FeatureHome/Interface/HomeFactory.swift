@@ -2,12 +2,18 @@ import SwiftUI
 
 public enum HomeFactory {
     public static func make(
-        featureRouter: HomeFeatureRouting
+        featureRouter: HomeFeatureRouting,
+        homeService: HomeService
     ) -> UIViewController {
-        UIHostingController(
+        let vc = UIHostingController(
             rootView: HomeView(
-                vm: HomeViewModel(featureRouter: featureRouter)
+                vm: HomeViewModel(
+                    featureRouter: featureRouter, 
+                    homeService: homeService
+                )
             )
         )
+        featureRouter.source = vc
+        return vc
     }
 }

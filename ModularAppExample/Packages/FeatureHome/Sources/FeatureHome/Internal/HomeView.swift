@@ -28,10 +28,21 @@ struct HomeView: View {
     }
 }
 
-//#Preview {
-//    HomeView(
-//        vm: HomeViewModel(
-//            featureRouter: any HomeFeatureRouting
-//        )
-//    )
-//}
+#Preview {
+    HomeView(
+        vm: HomeViewModel(
+            featureRouter: HomeFeatureRoutingDummy(), 
+            homeService: HomeServiceDummy()
+        )
+    )
+}
+
+fileprivate class HomeFeatureRoutingDummy: HomeFeatureRouting {
+    var source: UIViewController?
+    
+    func showRestaurantDetails(for item: HomeItem) {}
+}
+
+fileprivate struct HomeServiceDummy: HomeService {
+    func getHomeItems() async throws -> [HomeItem] { [] }
+}

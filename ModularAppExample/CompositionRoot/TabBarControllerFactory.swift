@@ -20,7 +20,10 @@ enum TabBarControllerFactory {
         let homeItem = UITabBarItem()
         homeItem.title = "Home"
         homeItem.image = UIImage(systemName: "house.fill")
-        let homeVC = HomeFactory.make(featureRouter: HomeFeatureRouter())
+        let homeVC = HomeFactory.make(
+            featureRouter: HomeFeatureRouter(),
+            homeService: HomeAPIService()
+        )
         homeVC.tabBarItem = homeItem
         return homeVC
     }

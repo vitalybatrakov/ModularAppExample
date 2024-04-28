@@ -3,9 +3,14 @@ import SwiftUI
 final class HomeViewModel: ObservableObject {
     
     private let featureRouter: HomeFeatureRouting
+    private let homeService: HomeService
     
-    init(featureRouter: HomeFeatureRouting) {
+    init(
+        featureRouter: HomeFeatureRouting,
+        homeService: HomeService
+    ) {
         self.featureRouter = featureRouter
+        self.homeService = homeService
     }
     
     @Published var items: [HomeItem] = [

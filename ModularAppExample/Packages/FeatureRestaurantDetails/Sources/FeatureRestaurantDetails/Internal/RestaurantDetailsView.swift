@@ -22,6 +22,7 @@ struct RestaurantDetailsView: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .offset(y: 50)
         .padding()
     }
 }
