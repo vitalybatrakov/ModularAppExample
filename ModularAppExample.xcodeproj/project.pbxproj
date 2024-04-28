@@ -22,6 +22,9 @@
 		BC85B7642BDCA65400AD6F06 /* HomeFeatureRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */; };
 		BC85B7662BDCA73A00AD6F06 /* ProfileAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7652BDCA73A00AD6F06 /* ProfileAPIService.swift */; };
 		BC85B7682BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7672BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift */; };
+		BC85B76A2BDE00D800AD6F06 /* HomeCompositionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7692BDE00D800AD6F06 /* HomeCompositionFactory.swift */; };
+		BC85B76C2BDE0DDD00AD6F06 /* HomeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B76B2BDE0DDD00AD6F06 /* HomeEndPoint.swift */; };
+		BC85B76E2BDE0F8D00AD6F06 /* HomeServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B76D2BDE0F8D00AD6F06 /* HomeServiceFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeatureRouter.swift; sourceTree = "<group>"; };
 		BC85B7652BDCA73A00AD6F06 /* ProfileAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIService.swift; sourceTree = "<group>"; };
 		BC85B7672BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsAPIService.swift; sourceTree = "<group>"; };
+		BC85B7692BDE00D800AD6F06 /* HomeCompositionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompositionFactory.swift; sourceTree = "<group>"; };
+		BC85B76B2BDE0DDD00AD6F06 /* HomeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndPoint.swift; sourceTree = "<group>"; };
+		BC85B76D2BDE0F8D00AD6F06 /* HomeServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceFactory.swift; sourceTree = "<group>"; };
 		BCE2316F2BD3726D00D5D8BD /* FeatureHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureHome; sourceTree = "<group>"; };
 		BCE231702BD3726D00D5D8BD /* YourUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourUI; sourceTree = "<group>"; };
 		BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureRestaurantDetails; sourceTree = "<group>"; };
@@ -133,8 +139,11 @@
 		BCE2316C2BD22F3B00D5D8BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BC85B7692BDE00D800AD6F06 /* HomeCompositionFactory.swift */,
 				BC85B7612BDCA63F00AD6F06 /* HomeAPIService.swift */,
 				BC85B7632BDCA65400AD6F06 /* HomeFeatureRouter.swift */,
+				BC85B76B2BDE0DDD00AD6F06 /* HomeEndPoint.swift */,
+				BC85B76D2BDE0F8D00AD6F06 /* HomeServiceFactory.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,10 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC85B7662BDCA73A00AD6F06 /* ProfileAPIService.swift in Sources */,
+				BC85B76E2BDE0F8D00AD6F06 /* HomeServiceFactory.swift in Sources */,
 				BC00AA782BCF6DD600DE8AD2 /* TabBarControllerFactory.swift in Sources */,
 				BC00AA742BCF6DD600DE8AD2 /* AppDelegate.swift in Sources */,
 				BC85B7622BDCA63F00AD6F06 /* HomeAPIService.swift in Sources */,
 				BC00AA762BCF6DD600DE8AD2 /* SceneDelegate.swift in Sources */,
+				BC85B76A2BDE00D800AD6F06 /* HomeCompositionFactory.swift in Sources */,
+				BC85B76C2BDE0DDD00AD6F06 /* HomeEndPoint.swift in Sources */,
 				BC85B7682BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift in Sources */,
 				BC85B7642BDCA65400AD6F06 /* HomeFeatureRouter.swift in Sources */,
 			);

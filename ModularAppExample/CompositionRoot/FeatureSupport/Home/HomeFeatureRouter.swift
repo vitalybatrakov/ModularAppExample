@@ -2,7 +2,7 @@ import FeatureHome
 import UIKit
 import FeatureRestaurantDetails
 
-class HomeFeatureRouter: HomeFeatureRouting {
+final class HomeFeatureRouter: HomeFeatureRouting {
     var source: UIViewController?
     
     func showRestaurantDetails(for item: HomeItem) {

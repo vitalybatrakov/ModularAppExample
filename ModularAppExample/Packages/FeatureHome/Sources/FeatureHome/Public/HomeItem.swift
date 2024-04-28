@@ -1,6 +1,6 @@
 import Foundation
 
-public struct HomeItem: Identifiable {
+public struct HomeItem: Identifiable, Decodable {
     public let id: String = UUID().uuidString
     public let image: String
     public let title: String

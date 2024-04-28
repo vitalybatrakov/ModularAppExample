@@ -1,8 +1,6 @@
 import UIKit
 
-public protocol HomeFeatureRouting: AnyObject {
-    var source: UIViewController? { get set }
-    
+public protocol HomeFeatureRouting {    
     func showRestaurantDetails(for item: HomeItem)
 }
 

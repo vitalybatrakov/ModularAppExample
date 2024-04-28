@@ -6,6 +6,8 @@ public protocol Requester {
 
 public struct YourNetworkRequester: Requester {
     
+    public init() {}
+    
     public func sendRequest<T: Decodable>(endPoint: EndPoint) async throws -> T {
        let urlRequest = try RequestFactory.makeRequest(endPoint: endPoint)
        let (data, response) = try await URLSession.shared.data(for: urlRequest)
