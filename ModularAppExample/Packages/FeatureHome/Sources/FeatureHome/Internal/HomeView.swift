@@ -59,8 +59,8 @@ struct HomeViewList: View {
                 description: "Fresh Seafood, Coastal Elegance"
             ),
         ],
-        showRestaurantDetails: { _ in
-            print("Item tapped")
+        showRestaurantDetails: { item in
+            print("Item \(item.title) tapped")
         }
     )
 }
