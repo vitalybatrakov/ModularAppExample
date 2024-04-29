@@ -1,7 +1,19 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var vm: HomeViewModel
+    @ObservedObject var vm: HomeViewModel
+    
+    var body: some View {
+        HomeViewList(
+            items: vm.items,
+            showRestaurantDetails: vm.showRestaurantDetails(for:)
+        )
+    }
+}
+
+struct HomeViewList: View {
+    let items: [HomeItem]
+    let showRestaurantDetails: ((HomeItem) -> Void)?
     
     var body: some View {
         ScrollView {
@@ -10,10 +22,10 @@ struct HomeView: View {
                 pinnedViews: .sectionHeaders
             ) {
                 Section {
-                    ForEach(vm.items) { item in
+                    ForEach(items) { item in
                         HomeItemView(item: item)
                             .onTapGesture {
-                                vm.showRestaurantDetails(for: item)
+                                showRestaurantDetails?(item)
                             }
                     }
                 } header: {
@@ -29,20 +41,26 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(
-        vm: HomeViewModel(
-            featureRouter: HomeFeatureRoutingDummy(), 
-            homeService: HomeServiceDummy()
-        )
+    HomeViewList(
+        items: [
+            .init(
+                image: "cup.and.saucer",
+                title: "Sizzle & Spice",
+                description: "Bold Flavors, Eclectic Dishes"
+            ),
+            .init(
+                image: "mug",
+                title: "Zenith Bites",
+                description: "Culinary Heights, Global Fusion"
+            ),
+            .init(
+                image: "takeoutbag.and.cup.and.straw",
+                title: "Blue Harbor",
+                description: "Fresh Seafood, Coastal Elegance"
+            ),
+        ],
+        showRestaurantDetails: { _ in
+            print("Item tapped")
+        }
     )
-}
-
-fileprivate class HomeFeatureRoutingDummy: HomeFeatureRouting {
-    var source: UIViewController?
-    
-    func showRestaurantDetails(for item: HomeItem) {}
-}
-
-fileprivate struct HomeServiceDummy: HomeService {
-    func getHomeItems() async throws -> [HomeItem] { [] }
 }
