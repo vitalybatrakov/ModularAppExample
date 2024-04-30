@@ -29,7 +29,7 @@ enum TabBarControllerFactory {
         let profileItem = UITabBarItem()
         profileItem.title = "Profile"
         profileItem.image = UIImage(systemName: "person.fill")
-        let profileVC = ProfileFactory.make()
+        let profileVC = ProfileCompositionFactory.make()
         profileVC.tabBarItem = profileItem
         return profileVC
     }

@@ -1,8 +1,19 @@
 import SwiftUI
 
-struct ProfileView: View {
+struct ProfileContainerView: View {
+    @ObservedObject var vm: ProfileViewModel
     
-    @State var profile: Profile
+    var body: some View {
+        if let profile = vm.profile {
+            ProfileView(profile: profile)
+        } else {
+            ProgressView()
+        }
+    }
+}
+
+struct ProfileView: View {
+    var profile: Profile
     
     var body: some View {
         VStack(spacing: 8) {
