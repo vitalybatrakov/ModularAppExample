@@ -1,7 +1,19 @@
 import SwiftUI
 
+struct RestaurantDetailsContainerView: View {
+    @ObservedObject var vm: RestaurantDetailsViewModel
+    
+    var body: some View {
+        if let details = vm.details {
+            RestaurantDetailsView(details: details)
+        } else {
+            ProgressView()
+        }
+    }
+}
+
 struct RestaurantDetailsView: View {
-    @State var details: RestaurantDetails
+    var details: RestaurantDetails
     
     var body: some View {
         ScrollView() {
@@ -29,10 +41,10 @@ struct RestaurantDetailsView: View {
 
 #Preview {
     RestaurantDetailsView(
-        details: .init(
+        details: RestaurantDetails(
             image: "cup.and.saucer",
             title: "Struducks",
-            description: "Best of the best of the best of the best of the best of the best of the best of the best of the best of the best of the best",
+            description: "Best of the best",
             items: [
                 MenuItem(title: "Large item", description: "Very large"),
                 MenuItem(title: "Medium item", description: "Very medium"),

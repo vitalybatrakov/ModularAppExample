@@ -28,6 +28,9 @@
 		BC85B7702BE0A7EA00AD6F06 /* ProfileEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B76F2BE0A7EA00AD6F06 /* ProfileEndPoint.swift */; };
 		BC85B7722BE0AB0300AD6F06 /* ProfileCompositionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7712BE0AB0300AD6F06 /* ProfileCompositionFactory.swift */; };
 		BC85B7742BE0AB7F00AD6F06 /* ProfileServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7732BE0AB7F00AD6F06 /* ProfileServiceFactory.swift */; };
+		BC85B7792BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7782BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift */; };
+		BC85B77B2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */; };
+		BC85B77D2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B77C2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		BC85B76F2BE0A7EA00AD6F06 /* ProfileEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEndPoint.swift; sourceTree = "<group>"; };
 		BC85B7712BE0AB0300AD6F06 /* ProfileCompositionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCompositionFactory.swift; sourceTree = "<group>"; };
 		BC85B7732BE0AB7F00AD6F06 /* ProfileServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceFactory.swift; sourceTree = "<group>"; };
+		BC85B7782BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsEndPoint.swift; sourceTree = "<group>"; };
+		BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsServiceFactory.swift; sourceTree = "<group>"; };
+		BC85B77C2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsCompositionFactory.swift; sourceTree = "<group>"; };
 		BCE2316F2BD3726D00D5D8BD /* FeatureHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureHome; sourceTree = "<group>"; };
 		BCE231702BD3726D00D5D8BD /* YourUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourUI; sourceTree = "<group>"; };
 		BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureRestaurantDetails; sourceTree = "<group>"; };
@@ -162,6 +168,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		BC85B7772BE1EF2500AD6F06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC85B7672BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift */,
+				BC85B7782BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift */,
+				BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		BCE2316C2BD22F3B00D5D8BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +200,8 @@
 		BCE2316E2BD22F4700D5D8BD /* RestaurantDetails */ = {
 			isa = PBXGroup;
 			children = (
-				BC85B7672BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift */,
+				BC85B7772BE1EF2500AD6F06 /* Services */,
+				BC85B77C2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift */,
 			);
 			path = RestaurantDetails;
 			sourceTree = "<group>";
@@ -284,9 +301,12 @@
 				BC00AA762BCF6DD600DE8AD2 /* SceneDelegate.swift in Sources */,
 				BC85B76A2BDE00D800AD6F06 /* HomeCompositionFactory.swift in Sources */,
 				BC85B7742BE0AB7F00AD6F06 /* ProfileServiceFactory.swift in Sources */,
+				BC85B77B2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift in Sources */,
 				BC85B76C2BDE0DDD00AD6F06 /* HomeEndPoint.swift in Sources */,
 				BC85B7682BDCA7AF00AD6F06 /* RestaurantDetailsAPIService.swift in Sources */,
+				BC85B7792BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift in Sources */,
 				BC85B7642BDCA65400AD6F06 /* HomeFeatureRouter.swift in Sources */,
+				BC85B77D2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

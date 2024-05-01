@@ -1,6 +1,6 @@
 import Foundation
 
-public struct MenuItem: Identifiable {
+public struct MenuItem: Identifiable, Decodable {
     public let id = UUID().uuidString
     public let title: String
     public let description: String

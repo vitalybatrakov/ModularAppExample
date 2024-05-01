@@ -1,5 +1,5 @@
 import Foundation
 
 public protocol RestaurantDetailsService {
-    func getRestaurants() async throws -> [RestaurantDetails]
+    func getRestaurantDetails(id: String) async throws -> RestaurantDetails
 }

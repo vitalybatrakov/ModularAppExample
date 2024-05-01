@@ -1,6 +1,6 @@
 import Foundation
 
-public struct RestaurantDetails {
+public struct RestaurantDetails: Decodable {
     public let image: String
     public let title: String
     public let description: String
