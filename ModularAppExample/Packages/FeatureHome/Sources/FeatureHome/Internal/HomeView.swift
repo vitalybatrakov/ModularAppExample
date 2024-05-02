@@ -45,6 +45,7 @@ struct HomeViewList: View {
                         .buttonStyle(.pink)
                     }
                     .padding()
+                    .background(Color(.white))
                 }
             }
         }

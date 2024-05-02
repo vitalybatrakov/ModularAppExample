@@ -8,6 +8,7 @@ enum TabBarControllerFactory {
     static func make() -> UITabBarController {
         let tabBarController = UITabBarController()
         tabBarController.view.backgroundColor = .white
+        tabBarController.tabBar.tintColor = .systemPink
         tabBarController.viewControllers = makeViewControllers()
         return tabBarController
     }
