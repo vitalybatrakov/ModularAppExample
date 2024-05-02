@@ -24,6 +24,13 @@ struct ProfileView: View {
             Text(profile.name)
                 .bold()
             Text(profile.bio)
+            
+            Button {
+                // TODO
+            } label: {
+                Text("Edit")
+            }
+            .buttonStyle(.pink)
         }
     }
 }
