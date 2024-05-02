@@ -1,4 +1,5 @@
 import SwiftUI
+import YourUI
 
 struct HomeView: View {
     @ObservedObject var vm: HomeViewModel
@@ -29,10 +30,21 @@ struct HomeViewList: View {
                             }
                     }
                 } header: {
-                    Text("Restaurants")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color(.white))
+                    HStack {
+                        Text("Restaurants")
+                            .padding()
+                            .background(Color(.white))
+                        
+                        Spacer()
+                        
+                        Button {
+                            // TODO
+                        } label: {
+                            Text("Add new")
+                        }
+                        .buttonStyle(.pink)
+                    }
+                    .padding()
                 }
             }
         }

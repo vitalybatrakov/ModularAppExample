@@ -12,7 +12,15 @@ let package = Package(
             targets: ["FeatureRestaurantDetails"]
         ),
     ],
+    dependencies: [
+        .package(name: "YourUI", path: "../YourUI")
+    ],
     targets: [
-        .target(name: "FeatureRestaurantDetails")
+        .target(
+            name: "FeatureRestaurantDetails",
+            dependencies: [
+                "YourUI"
+            ]
+        )
     ]
 )

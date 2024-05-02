@@ -1,4 +1,5 @@
 import SwiftUI
+import YourUI
 
 struct RestaurantDetailsContainerView: View {
     @ObservedObject var vm: RestaurantDetailsViewModel
@@ -31,6 +32,14 @@ struct RestaurantDetailsView: View {
                     MenuItemView(menuItem: item)
                 }
                 .padding(.vertical, 8)
+                
+                Button {
+                    // TODO:
+                } label: {
+                    Text("Order here")
+                }
+                .buttonStyle(.pink)
+                .frame(maxWidth: .infinity, alignment: .center)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
