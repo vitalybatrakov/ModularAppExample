@@ -3,6 +3,7 @@ import UIKit
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    private var delegete = TabBarControllerDelegate()
 
     func scene(
         _ scene: UIScene,
@@ -11,7 +12,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = TabBarControllerFactory.make()
+        window.rootViewController = TabBarControllerFactory.make(delegate: delegete)
         self.window = window
         window.makeKeyAndVisible()
     }

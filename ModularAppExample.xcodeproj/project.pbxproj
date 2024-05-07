@@ -31,6 +31,7 @@
 		BC85B7792BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B7782BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift */; };
 		BC85B77B2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */; };
 		BC85B77D2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B77C2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift */; };
+		BC85B77F2BE9DB0E00AD6F06 /* TabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85B77E2BE9DB0E00AD6F06 /* TabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		BC85B7782BE1F00000AD6F06 /* RestaurantDetailsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsEndPoint.swift; sourceTree = "<group>"; };
 		BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsServiceFactory.swift; sourceTree = "<group>"; };
 		BC85B77C2BE1F30400AD6F06 /* RestaurantDetailsCompositionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsCompositionFactory.swift; sourceTree = "<group>"; };
+		BC85B77E2BE9DB0E00AD6F06 /* TabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerDelegate.swift; sourceTree = "<group>"; };
 		BCE2316F2BD3726D00D5D8BD /* FeatureHome */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureHome; sourceTree = "<group>"; };
 		BCE231702BD3726D00D5D8BD /* YourUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = YourUI; sourceTree = "<group>"; };
 		BCE231712BD3726D00D5D8BD /* FeatureRestaurantDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureRestaurantDetails; sourceTree = "<group>"; };
@@ -133,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BC00AA8A2BCF72A900DE8AD2 /* FeatureSupport */,
-				BC00AA772BCF6DD600DE8AD2 /* TabBarControllerFactory.swift */,
+				BC85B7802BE9DB3200AD6F06 /* TabBar */,
 			);
 			path = CompositionRoot;
 			sourceTree = "<group>";
@@ -176,6 +178,15 @@
 				BC85B77A2BE1F02C00AD6F06 /* RestaurantDetailsServiceFactory.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BC85B7802BE9DB3200AD6F06 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BC85B77E2BE9DB0E00AD6F06 /* TabBarControllerDelegate.swift */,
+				BC00AA772BCF6DD600DE8AD2 /* TabBarControllerFactory.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		BCE2316C2BD22F3B00D5D8BD /* Home */ = {
@@ -291,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC85B77F2BE9DB0E00AD6F06 /* TabBarControllerDelegate.swift in Sources */,
 				BC85B7662BDCA73A00AD6F06 /* ProfileAPIService.swift in Sources */,
 				BC85B76E2BDE0F8D00AD6F06 /* HomeServiceFactory.swift in Sources */,
 				BC00AA782BCF6DD600DE8AD2 /* TabBarControllerFactory.swift in Sources */,

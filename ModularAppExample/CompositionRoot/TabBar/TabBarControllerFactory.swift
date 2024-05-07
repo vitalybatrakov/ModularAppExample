@@ -5,11 +5,12 @@ import UIKit
 
 enum TabBarControllerFactory {
     
-    static func make() -> UITabBarController {
+    static func make(delegate: TabBarControllerDelegate) -> UITabBarController {
         let tabBarController = UITabBarController()
         tabBarController.view.backgroundColor = .white
         tabBarController.tabBar.tintColor = .systemPink
         tabBarController.viewControllers = makeViewControllers()
+        tabBarController.delegate = delegate
         return tabBarController
     }
     
