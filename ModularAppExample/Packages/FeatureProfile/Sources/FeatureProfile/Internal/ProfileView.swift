@@ -29,6 +29,7 @@ struct ProfileView: View {
                 // TODO
             } label: {
                 Text("Edit")
+                    .frame(width: 100)
             }
             .buttonStyle(.pink)
         }

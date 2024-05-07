@@ -37,6 +37,7 @@ struct RestaurantDetailsView: View {
                     // TODO:
                 } label: {
                     Text("Order here")
+                        .frame(width: 100)
                 }
                 .buttonStyle(.pink)
                 .frame(maxWidth: .infinity, alignment: .center)

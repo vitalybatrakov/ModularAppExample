@@ -32,6 +32,5 @@ extension ButtonStyle where Self == PinkStyle {
             print("Pink button pressed again!")
         }
         .buttonStyle(.pink)
-        
     }
 }

@@ -40,6 +40,7 @@ struct HomeViewList: View {
                             // TODO
                         } label: {
                             Text("Add new")
+                                .frame(width: 100)
                         }
                         .buttonStyle(.pink)
                     }
