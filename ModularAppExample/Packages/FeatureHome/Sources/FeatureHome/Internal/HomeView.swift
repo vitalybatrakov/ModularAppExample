@@ -33,7 +33,6 @@ struct HomeViewList: View {
                     HStack {
                         Text("Restaurants")
                             .padding()
-                            .background(Color(.white))
                         
                         Spacer()
                         
@@ -45,7 +44,7 @@ struct HomeViewList: View {
                         .buttonStyle(.pink)
                     }
                     .padding()
-                    .background(Color(.white))
+                    .background(Color(.systemBackground))
                 }
             }
         }
