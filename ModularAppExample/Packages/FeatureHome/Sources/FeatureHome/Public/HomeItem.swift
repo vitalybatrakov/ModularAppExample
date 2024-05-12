@@ -1,7 +1,7 @@
 import Foundation
 
 public struct HomeItem: Identifiable, Decodable {
-    public let id: String = UUID().uuidString
+    public var id: String = UUID().uuidString
     public let image: String
     public let title: String
     public let description: String
